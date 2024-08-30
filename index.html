@@ -1,563 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Imam Bagus Nugroho - Portfolio</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
 
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-      .image-link img {
-        transition: box-shadow 0.3s ease;
-      }
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Imam-Bagus</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
-      .image-link img:hover {
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4),
-          0 12px 24px rgba(0, 0, 0, 0.3);
-      }
-      .neon-img {
-        width: 10px; /* Ukuran gambar yang lebih besar untuk efek yang lebih jelas */
-        height: 10px; /* Ukuran gambar yang lebih besar untuk efek yang lebih jelas */
-        border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
-        display: inline-block; /* Menjaga gambar dan teks dalam satu baris */
-        vertical-align: middle; /* Menyelaraskan gambar dengan teks */
-        margin: 0; /* Menghilangkan margin default */
-        border: 0; /* Tidak ada border */
-        box-shadow: 0 0 4px rgba(0, 255, 0, 0.8); /* Efek bayangan awal yang agak gelap */
-        animation: enlarge-shrink 2s infinite alternate; /* Menggunakan animasi untuk membesar dan mengecil */
-      }
+  <style>
+    .custom-bg-dark {
+      background-color: #343a40;
+    }
 
-      @keyframes enlarge-shrink {
-        from {
-          transform: scale(1); /* Ukuran gambar normal */
-          box-shadow: 0 0 4px rgba(0, 255, 0, 0.8); /* Bayangan tipis yang agak gelap pada ukuran normal */
-        }
-        to {
-          transform: scale(1.5); /* Ukuran gambar membesar */
-          box-shadow: 0 0 12px rgba(0, 255, 0, 0.8); /* Bayangan sedikit lebih besar dan gelap saat gambar membesar */
-        }
-      }
+    .custom-mt {
+      margin-top: -13px;
+    }
+  </style>
+</head>
 
-      /* Menghilangkan border pada list-group */
-      .list-group-item {
-        border: none;
-        padding: 0.1rem 0.1rem; /* Menjaga padding agar teks dan badge tidak terlalu rapat */
-      }
+<body class="bg-dark">
+  <nav class="navbar sticky-top custom-bg-dark">
+    <p></p>
+  </nav>
 
-      /* Mengatur tampilan badge agar menempel setelah teks */
-      .badge {
-        margin-left: auto; /* Mengatur badge menempel ke kanan */
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="container">
-      <div class="row mt-1">
-        <div class="col">
-          <img src="img/banner.png" alt="" class="img-fluid" />
+  <div class="container-fluid my-4">
+    <div class="row g-4">
+      <div class="col-lg-3">
+        <div class="card custom-bg-dark py-4">
+          <img src="img/profile.jpg" class="card-img-top rounded-circle img-fluid" style="
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                margin: 0 auto;
+              " alt="Profile picture" />
+          <div class="card-body text-center text-lg-start">
+            <h4 class="card-title text-white">Imam Bagus Nugroho</h4>
+            <p class="card-text text-secondary">UI Designer, Web Developer</p>
+            <p class="card-text text-white">
+              <small>Hi, I am currently looking for a job. Please check out my
+                portfolio. Feel free to contact me, I am available
+                24/7.</small>
+            </p>
+          </div>
+          <ul class="list-group list-group-flush border border-0">
+            <li class="list-group-item custom-bg-dark text-white border border-0">
+              <i class="bi bi-geo-alt"></i> &nbsp;Bekasi, Indonesia
+            </li>
+            <li
+              class="list-group-item custom-bg-dark text-white border border-0 list-group-item-action list-group-item-dark">
+              <a href="https://dribbble.com/imam-bagus" class="nav-link" target="_blank">
+                <i class="bi bi-dribbble"></i> &nbsp;imam-bagus
+                <small><i class="bi bi-link-45deg"></i></small></a>
+            </li>
+            <li
+              class="list-group-item custom-bg-dark text-white border border-0 list-group-item-action list-group-item-dark">
+              <a href="https://github.com/imam-bagus" class="nav-link" target="_blank">
+                <i class="bi bi-github"></i> &nbsp;imam-bagus
+                <small><i class="bi bi-link-45deg"></i></small></a>
+            </li>
+            <li
+              class="list-group-item custom-bg-dark text-white border border-0 list-group-item-action list-group-item-dark">
+              <a href="https://www.instagram.com/imambagusnugroho" class="nav-link" target="_blank">
+                <i class="bi bi-instagram"></i> &nbsp;imambagusnugroho
+                <small><i class="bi bi-link-45deg"></i></small></a>
+            </li>
+            <li
+              class="list-group-item custom-bg-dark text-white border border-0 list-group-item-action list-group-item-dark">
+              <a href="https://www.linkedin.com/in/imambagusnugroho/" class="nav-link" target="_blank">
+                <i class="bi bi-linkedin"></i> &nbsp;imambagusnugroho
+                <small><i class="bi bi-link-45deg"></i></small></a>
+            </li>
+            <li
+              class="list-group-item custom-bg-dark text-white border border-0 list-group-item-action list-group-item-dark">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=imambagus9864@gmail.com" class="nav-link"
+                target="_blank">
+                <i class="bi bi-envelope"></i> &nbsp;imambagus9864@gmail.com
+                <small><i class="bi bi-link-45deg"></i></small></a>
+            </li>
+            <li
+              class="list-group-item custom-bg-dark text-white border border-0 list-group-item-action list-group-item-dark">
+              <a href="https://wa.me/6289668054016" class="nav-link" target="_blank">
+                <i class="bi bi-whatsapp"></i> &nbsp;+6289668054016
+                <small><i class="bi bi-link-45deg"></i></small></a>
+            </li>
+            <li class="list-group-item custom-bg-dark text-white border border-0 list-group-item-dark">
+              <a class="btn btn-sm btn-outline-secondary text-light mx-auto" type="button" href="doc/CV(ID)-Imam.pdf"
+                target="_blank" download>
+                <i class="bi bi-download"></i>
+                Resume (ID)
+              </a>
+              <a class="btn btn-sm btn-outline-secondary text-light" type="button" href="doc/CV(EN)-Nugroho.pdf"
+                target="_blank" download>
+                <i class="bi bi-download"></i>
+                Resume (EN)
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="row mt-2">
-        <div class="col-md-3 text-center text-md-end" style="margin-top: -40px">
-          <img
-            src="img/profile.jpg"
-            alt="Profile"
-            class="img-fluid"
-            style="border-radius: 50%; max-width: 150px; max-height: auto"
-          />
-        </div>
-        <div class="col-md-9">
-          <div class="row">
-            <div class="col">
-              <h1
-                class="fw-bold text-center text-md-start mt-3 mt-md-0 fs-2 fs-md-4"
-              >
-                Imam Bagus Nugroho<span
-                  class="badge bg-white text-secondary fs-6 fst-normal"
-                  style="vertical-align: middle"
-                >
-                  <img
-                    src="img/notif.png"
-                    alt="Dot"
-                    class="neon-img"
-                    style="margin-top: -3px; margin-right: 3px"
-                  />
-                  <small>Open to work</small></span
-                >
-              </h1>
-            </div>
-          </div>
-          <div
-            class="row row-cols-auto justify-content-md-start justify-content-center"
-          >
-            <div class="col">
-              <span
-                class="badge border border-dark"
-                style="
-                  background-image: linear-gradient(to right, #c33764, #1d2671);
-                "
-                ><small>Web developer</small></span
-              >
-            </div>
-            <div class="col">
-              <span
-                class="badge border border-dark"
-                style="
-                  background-image: linear-gradient(to right, #c33764, #1d2671);
-                "
-                ><small>UI Designer</small></span
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-4">
-        <div class="col-lg-6">
-          <h3 class="fs-5">About me</h3>
-          <p
-            class="text-wrap fw-normal"
-            style="text-align: justify; text-justify: inter-word"
-          >
-            <small>
-              Fresh graduate Bachelor's degree in Information Systems from Nusa
-              Mandiri University, specializing in Web Development, User
-              Interface Design, and Database Systems. I hold BNSP certification
-              in software development and IAIA certification in database
-              systems. With a strong interest in IT, I am highly motivated to
-              build a successful career in this field.
-            </small>
-          </p>
-        </div>
-        <div class="col-lg-5">
-          <div class="row mt-2">
-            <div class="col-5">
-              <h3 class="fs-6 text-secondary text-center text-lg-start">
-                Location
-              </h3>
-              <div class="row text-center text-lg-start">
-                <div class="col-lg-2">
-                  <img
-                    src="img/logo-id.png"
-                    alt=""
-                    class="img-fluid"
-                    style="max-width: 30px; max-height: auto"
-                  />
-                </div>
-                <div class="col-lg-10">
-                  <p class="" style="margin-top: 3px; margin-left: 10px">
-                    Kota Bekasi, ID
-                  </p>
-                </div>
+      <div class="col">
+        <div class="row row-cols-1 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card h-100 custom-bg-dark text-white">
+              <img src="img/p1.png" class="card-img-top img-fluid" style="height: 200px; object-fit: cover"
+                alt="Digive landing page" />
+              <div class="card-body">
+                <h5 class="card-title">Digive landing page</h5>
+                <p class="card-text text-secondary">UI Design</p>
+                <p class="card-text custom-mt">
+                  <small>Digive is a platform where content creators or
+                    influencers receive support from givers.</small>
+                </p>
               </div>
-            </div>
-            <div class="col-7">
-              <h3 class="fs-6 text-secondary text-center text-lg-start">
-                Email
-              </h3>
-              <div class="row text-center text-lg-start">
-                <div class="col-lg-2">
-                  <img
-                    src="img/logo-gmail.png"
-                    alt=""
-                    class="img-fluid"
-                    style="max-width: 30px; max-height: auto"
-                  />
-                </div>
-                <div class="col-lg-10">
-                  <p class="" style="margin-top: 2px">
-                    imambagus9864@gmail.com
-                  </p>
-                </div>
+              <div class="card-footer border-0">
+                <a class="btn btn-outline-secondary text-light" type="button"
+                  href="https://dribbble.com/shots/24733014--ID-Simple-landing-page?utm_source=Clipboard_Shot&utm_campaign=imam-bagus&utm_content=(ID)%20Simple%20landing%20page&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=imam-bagus&utm_content=(ID)%20Simple%20landing%20page&utm_medium=Social_Share"
+                  target="_blank">
+                  See on Dribbble &nbsp;<i class="bi bi-dribbble"></i>
+                </a>
               </div>
             </div>
           </div>
-          <div class="row mt-2">
-            <div class="col-5">
-              <h3 class="fs-6 text-secondary text-center text-lg-start">
-                Phone
-              </h3>
-              <div class="row text-center text-lg-start">
-                <div class="col-lg-2">
-                  <img
-                    src="img/logo-wa.png"
-                    alt=""
-                    class="img-fluid"
-                    style="max-width: 30px; max-height: auto"
-                  />
-                </div>
-                <div class="col-lg-10">
-                  <p class="" style="margin-top: 3px">+6289668054016</p>
-                </div>
+
+          <div class="col">
+            <div class="card h-100 custom-bg-dark text-white">
+              <img src="img/p2.png" class="card-img-top img-fluid" style="height: 200px; object-fit: cover" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Digive coming soon</h5>
+                <p class="card-text text-secondary">UI Design</p>
+                <p class="card-text custom-mt">
+                  <small>Digive is platform where content creator or influencer
+                    receiving support from givers.</small>
+                </p>
               </div>
-            </div>
-            <div class="col-7">
-              <h3 class="fs-6 text-secondary text-center text-lg-start">
-                Github
-              </h3>
-              <div class="row text-center text-lg-start">
-                <div class="col-lg-2">
-                  <img
-                    src="img/logo-github.svg"
-                    alt=""
-                    class="img-fluid"
-                    style="max-width: 30px; max-height: auto"
-                  />
-                </div>
-                <div class="col-lg-10">
-                  <p class="" style="margin-top: 2px">imam-bagus</p>
-                </div>
+
+              <div class="card-footer border-0">
+                <a class="btn btn-outline-secondary text-light" type="button"
+                  href="https://dribbble.com/shots/24732844-Coming-soon-page?utm_source=Clipboard_Shot&utm_campaign=imam-bagus&utm_content=Coming%20soon%20page&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=imam-bagus&utm_content=Coming%20soon%20page&utm_medium=Social_Share"
+                  target="_blank">
+                  See on Dribbble &nbsp;<i class="bi bi-dribbble"></i>
+                </a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="row mt-4">
-        <div class="col-12">
-          <h3 class="fs-5">Education</h3>
-        </div>
-      </div>
+          <div class="col">
+            <div class="card h-100 custom-bg-dark text-white">
+              <img src="img/p3.png" class="card-img-top img-fluid" style="height: 200px; object-fit: cover" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">SITORY</h5>
+                <p class="card-text text-secondary">Web App</p>
+                <p class="card-text custom-mt">
+                  <small>Web application used to process & obtain inventory
+                    information easily and quickly for related
+                    divisions.</small>
+                </p>
+              </div>
 
-      <div class="row mt-2">
-        <div class="col-lg-5">
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-2 text-center text-lg-end">
-                  <img
-                    src="img/logo-unm.png"
-                    alt=""
-                    class="img-fluid"
-                    style="max-width: 50px; max-height: auto"
-                  />
-                </div>
-                <div class="col-10">
-                  <div class="row">
-                    <div class="col-12 mt-1" style="margin-bottom: -5px">
-                      <h5 class="card-title fs-6">Universitas Nusa Mandiri</h5>
-                    </div>
-                    <div class="col-12">
-                      <p class="card-text">
-                        <small
-                          >Undergraduate Degree in Information Systems</small
-                        >
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 mt-1">
-                  <p class="card-text"><small>Mar 2021 - Jan 2024</small></p>
-                </div>
+              <div class="card-footer border-0">
+                <a class="btn btn-outline-secondary text-light" type="button" href="http://sitory.onrender.com/"
+                  target="_blank">
+                  Try Demo &nbsp;<i class="bi bi-window"></i>
+                </a>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-lg-5 mt-3 mt-lg-0">
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-2 text-center text-lg-start">
-                  <img
-                    src="img/logo-bsi.png"
-                    alt=""
-                    class="img-fluid"
-                    style="max-width: 50px; max-height: auto"
-                  />
-                </div>
-                <div class="col-10">
-                  <div class="row">
-                    <div class="col-12 mt-1" style="margin-bottom: -5px">
-                      <h5 class="card-title fs-6">
-                        Universitas Bina Sarana Informatika
-                      </h5>
-                    </div>
-                    <div class="col-12">
-                      <p class="card-text">
-                        <small>Diploma in Information Systems</small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 mt-1">
-                  <p class="card-text"><small>Sep 2018 - Aug 2021</small></p>
-                </div>
+          <div class="col">
+            <div class="card h-100 custom-bg-dark text-white">
+              <img src="img/p4.png" class="card-img-top img-fluid" style="height: 200px; object-fit: cover" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">FIND mobile</h5>
+                <p class="card-text text-secondary">UI Design</p>
+                <p class="card-text custom-mt">
+                  <small>FIND is used to obtain information about products that
+                    buyes are looking for near their location.</small>
+                </p>
+              </div>
+
+              <div class="card-footer border-0">
+                <a class="btn btn-outline-secondary text-light" type="button"
+                  href="https://dribbble.com/shots/24733251--ID-Mobile-FIND-product-nearby?utm_source=Clipboard_Shot&utm_campaign=imam-bagus&utm_content=(ID)%20Mobile%20FIND%20product%20nearby&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=imam-bagus&utm_content=(ID)%20Mobile%20FIND%20product%20nearby&utm_medium=Social_Share"
+                  target="_blank">
+                  See on Dribbble &nbsp;<i class="bi bi-dribbble"></i>
+                </a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="row mt-4">
-        <div class="col-12">
-          <h3 class="fs-5">Last work</h3>
-        </div>
-      </div>
+          <div class="col">
+            <div class="card h-100 custom-bg-dark text-white">
+              <img src="img/p6.png" class="card-img-top img-fluid" style="height: 200px; object-fit: cover" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Jojo Inventory</h5>
+                <p class="card-text text-secondary">Web App</p>
+                <p class="card-text custom-mt">
+                  <small>The inventory program is used to disseminate inventory
+                    information to related divisions quickly and on
+                    time.</small>
+                </p>
+              </div>
 
-      <div class="row mt-1">
-        <div class="col-lg-5 mt-4 mt-lg-4 text-center text-lg-start">
-          <a
-            href="https://sitory.onrender.com"
-            class="image-link"
-            target="_blank"
-          >
-            <img
-              src="img/project2-sitory.png"
-              class="rounded border border-dark img-fluid"
-              alt="..."
-            />
-          </a>
-        </div>
-        <div class="col-lg-5 mt-4 text-center text-lg-start">
-          <a
-            href="https://dribbble.com/imam-bagus"
-            class="image-link"
-            target="_blank"
-          >
-            <img
-              src="img/project3-find.png"
-              class="rounded border border-dark img-fluid"
-              alt="..."
-            />
-          </a>
-        </div>
-        <div class="col-lg-5 mt-4 text-center text-lg-start">
-          <a
-            href="https://jojoinventory.onrender.com"
-            class="image-link"
-            target="_blank"
-          >
-            <img
-              src="img/project4-jojo.png"
-              class="rounded border border-dark img-fluid"
-              alt="..."
-            />
-          </a>
-        </div>
-        <div class="col-lg-5 mt-4 text-center text-lg-start">
-          <a
-            href="https://dribbble.com/imam-bagus"
-            class="image-link"
-            target="_blank"
-          >
-            <img
-              src="img/project5-dm.png"
-              class="rounded border border-dark img-fluid"
-              alt="..."
-            />
-          </a>
-        </div>
-      </div>
+              <div class="card-footer border-0">
+                <a class="btn btn-outline-secondary text-light" type="button" href="https://jojoinventory.onrender.com/"
+                  target="_blank">
+                  Try Demo &nbsp;<i class="bi bi-window"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-      <div class="row mt-5">
-        <div class="col-12">
-          <h3 class="fs-5">Skill</h3>
-        </div>
-      </div>
+          <div class="col">
+            <div class="card h-100 custom-bg-dark text-white">
+              <img src="img/p5.jpg" class="card-img-top img-fluid" style="height: 200px; object-fit: cover" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Digive creator coming soon</h5>
+                <p class="card-text text-secondary">UI Design</p>
+                <p class="card-text custom-mt">
+                  <small>Digive is platform where content creator or influencer
+                    receiving support from givers.</small>
+                </p>
+              </div>
 
-      <div class="row mt-2">
-        <div class="col-lg-4">
-          <div class="row">
-            <div class="col">
-              <h4 class="fs-6 fst-italic">Soft skill</h4>
+              <div class="card-footer border-0">
+                <a class="btn btn-outline-secondary text-light" type="button"
+                  href="https://dribbble.com/shots/24732992-Simple-coming-soon-page?utm_source=Clipboard_Shot&utm_campaign=imam-bagus&utm_content=Simple%20coming%20soon%20page&utm_medium=Social_Share"
+                  target="_blank">
+                  See on Dribbble &nbsp;<i class="bi bi-dribbble"></i>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <ul class="list-group list-group-numbered fw-normal">
-                <li class="list-group-item">
-                  Fast learner
-                  <span
-                    class="badge text-bg-success border border-dark fw-normal"
-                    ><small>Experienced</small></span
-                  >
-                </li>
-                <li class="list-group-item">
-                  Good time management
-                  <span
-                    class="badge text-bg-success border border-dark fw-normal"
-                    ><small>Experienced</small></span
-                  >
-                </li>
-                <li class="list-group-item">
-                  Able work team & individual
-                  <span
-                    class="badge text-bg-success border border-dark fw-normal"
-                    ><small>Experienced</small></span
-                  >
-                </li>
-                <li class="list-group-item">
-                  Hard worker
-                  <span
-                    class="badge text-bg-success border border-dark fw-normal"
-                    ><small>Experienced</small></span
-                  >
-                </li>
-                <li class="list-group-item">
-                  Able work under pressure
-                  <span
-                    class="badge text-bg-success border border-dark fw-normal"
-                    ><small>Experienced</small></span
-                  >
-                </li>
-                <li class="list-group-item">
-                  Microsoft office
-                  <span
-                    class="badge text-bg-success border border-dark fw-normal"
-                    ><small>Experienced</small></span
-                  >
-                </li>
-                <li class="list-group-item">
-                  Google workspace
-                  <span
-                    class="badge text-bg-success border border-dark fw-normal"
-                    ><small>Experienced</small></span
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!---->
-        <div class="col-lg-4 mt-4 mt-lg-0">
-          <div class="row">
-            <div class="col">
-              <h4 class="fs-6 fst-italic">Web development</h4>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <ul class="list-group list-group-numbered fw-normal">
-                <li class="list-group-item">
-                  HTML, CSS, JavaScript
-                  <span
-                    class="badge text-bg-success border border-dark fw-normal"
-                    ><small>Experienced</small></span
-                  >
-                </li>
-                <li class="list-group-item">
-                  Git & Github
-                  <span
-                    class="badge text-bg-success border border-dark fw-normal"
-                    ><small>Experienced</small></span
-                  >
-                </li>
-                <li class="list-group-item">
-                  PHP & OOP
-                  <span
-                    class="badge text-bg-success border border-dark fw-normal"
-                    ><small>Experienced</small></span
-                  >
-                </li>
-                <li class="list-group-item">
-                  SQL & MySQL
-                  <span
-                    class="badge text-bg-success border border-dark fw-normal"
-                    ><small>Experienced</small></span
-                  >
-                </li>
-                <li class="list-group-item">
-                  Codeigniter & Bootstrap
-                  <span
-                    class="badge text-bg-success border border-dark fw-normal"
-                    ><small>Experienced</small></span
-                  >
-                </li>
-                <li class="list-group-item">
-                  APIs
-                  <span class="badge text-bg-light border border-dark fw-normal"
-                    ><small>Soon</small></span
-                  >
-                </li>
-                <li class="list-group-item">
-                  Laravel & Vue js
-                  <span class="badge text-bg-light border border-dark fw-normal"
-                    ><small>Soon</small></span
-                  >
-                </li>
-                <li class="list-group-item">
-                  PostgreSQL
-                  <span class="badge text-bg-light border border-dark fw-normal"
-                    ><small>Soon</small></span
-                  >
-                </li>
-                <li class="list-group-item">
-                  Node js & express js
-                  <span class="badge text-bg-light border border-dark fw-normal"
-                    ><small>Soon</small></span
-                  >
-                </li>
-                <li class="list-group-item">
-                  Mongo DB
-                  <span class="badge text-bg-light border border-dark fw-normal"
-                    ><small>Soon</small></span
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!---->
-        <div class="col-lg-4 mt-4 mt-lg-0">
-          <div class="row">
-            <div class="col">
-              <h4 class="fs-6 fst-italic">UI design</h4>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <ul class="list-group list-group-numbered fw-normal">
-                <li class="list-group-item">
-                  Design wireframe
-                  <span
-                    class="badge text-bg-warning border border-dark fw-normal"
-                    ><small>Intermediate</small></span
-                  >
-                </li>
-                <li class="list-group-item">
-                  Design mockup
-                  <span
-                    class="badge text-bg-warning border border-dark fw-normal"
-                    ><small>Intermediate</small></span
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!---->
-      </div>
 
-      <div class="row mt-5">
-        <div class="col-12">
-          <img
-            src="img/footer.png"
-            class="img-fluid rounded-top"
-            alt="Your Image"
-          />
+          <div class="col">
+            <div class="card h-100 custom-bg-dark text-white">
+              <img src="img/p7.png" class="card-img-top img-fluid" style="height: 200px; object-fit: cover" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Disscussion forum mobile</h5>
+                <p class="card-text text-secondary">UI Design</p>
+                <p class="card-text custom-mt">
+                  <small>DM is a student forum for a university to hold
+                    discussions related to lectures.</small>
+                </p>
+              </div>
+
+              <div class="card-footer border-0">
+                <a class="btn btn-outline-secondary text-light" type="button"
+                  href="https://dribbble.com/shots/24733373--ID-Mobile-administrator-discussion-forum?utm_source=Clipboard_Shot&utm_campaign=imam-bagus&utm_content=(ID)%20Mobile%20administrator%20discussion%20forum&utm_medium=Social_Share"
+                  target="_blank">
+                  See on Dribbble &nbsp;<i class="bi bi-dribbble"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 custom-bg-dark text-white">
+              <img src="img/p8.png" class="card-img-top img-fluid" style="height: 200px; object-fit: cover" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Online resume page</h5>
+                <p class="card-text text-secondary">UI Design</p>
+                <p class="card-text custom-mt">
+                  <small>Simple resume page for telling about yourself, showcasing
+                    your professional experience and skills.</small>
+                </p>
+              </div>
+
+              <div class="card-footer border-0">
+                <a class="btn btn-outline-secondary text-light" type="button"
+                  href="https://dribbble.com/shots/24732944-Simple-online-resume-page?utm_source=Clipboard_Shot&utm_campaign=imam-bagus&utm_content=Simple%20online%20resume%20page&utm_medium=Social_Share"
+                  target="_blank">
+                  See on Dribbble &nbsp;<i class="bi bi-dribbble"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <nav class="navbar custom-bg-dark">
+    <div class="container-fluid justify-content-center">
+      <p></p>
+      <!-- <span class="navbar-text text-white">
+          <small> <i class="bi bi-c-circle"></i> 2024 imam-bagus </small>
+        </span> -->
+    </div>
+  </nav>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Q2ByAQ0HuJEX6X27KrcZJUK9a5Q4h3u7qx/YT00XnvVi6i2nP7BZQW9BwFYY7+I8"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
