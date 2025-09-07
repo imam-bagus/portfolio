@@ -16,9 +16,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio | Imam Bagus</title>
+
+  <!-- Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Glightbox-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
 
   <style>
     .custom-bg-dark {
@@ -27,6 +33,35 @@
 
     .custom-mt {
       margin-top: -13px;
+    }
+
+
+    .zoom-hover {
+      transition: transform 0.4s ease;
+      cursor: pointer;
+    }
+
+    .zoom-hover:hover {
+      transform: scale(1.05);
+    }
+
+
+    .glightbox-container .ginner-container,
+    .glightbox-container .gslide {
+      display: flex !important;
+      align-items: flex-start !important;
+      justify-content: center !important;
+      height: 100% !important;
+      overflow-y: auto !important;
+
+    }
+
+
+    .glightbox-container .gslide-image img {
+      width: 100% !important;
+      height: auto !important;
+      max-height: none !important;
+      object-fit: contain !important;
     }
   </style>
 </head>
@@ -48,7 +83,7 @@
               " alt="Profile picture" />
           <div class="card-body text-center text-lg-start">
             <h4 class="card-title text-white">Imam Bagus Nugroho</h4>
-            <p class="card-text text-secondary">UI Designer, Web Developer</p>
+            <p class="card-text text-secondary">UI Designer | Web Developer</p>
             <p class="card-text text-white">
               <small>Hi, I am currently looking for a job. Please check out my
                 portfolio and feel free to contact me anytime, as I am
@@ -67,12 +102,6 @@
                 <small><i class="bi bi-link-45deg"></i></small></a>
             </li> -->
 
-            <li
-              class="list-group-item custom-bg-dark text-white border border-0 list-group-item-action list-group-item-dark">
-              <a href="https://www.freelancer.com/u/imambagusn" class="nav-link text-truncate" target="_blank">
-                <img src="icon/freelancer.svg" width="18" height="18" alt="Icon"> &nbsp;imambagusn
-                <small><i class="bi bi-link-45deg"></i></small></a>
-            </li>
 
 
             <li
@@ -102,6 +131,15 @@
                 <i class="bi bi-github"></i> &nbsp;imam-bagus
                 <small><i class="bi bi-link-45deg"></i></small></a>
             </li>
+
+            <li
+              class="list-group-item custom-bg-dark text-white border border-0 list-group-item-action list-group-item-dark">
+              <a href="https://www.freelancer.com/u/imambagusn" class="nav-link text-truncate" target="_blank">
+                <img src="icon/freelancer.svg" width="18" height="18" alt="Icon"> &nbsp;imambagusn
+                <small><i class="bi bi-link-45deg"></i></small></a>
+            </li>
+
+
           </ul>
 
           <!-- <div class="card-footer">
@@ -132,9 +170,11 @@
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
-              <img src="img/softwaredirectory_landingpage.webp" class="card-img-top img-fluid"
-                style="height: 200px; object-fit: cover" alt="..." />
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
+              <a href="img/full/softwaredirectory_1_full.webp" class="glightbox" data-gallery="card1">
+                <img src="img/thumb/softwaredirectory_thumb.webp" class="card-img-top img-fluid zoom-hover"
+                  style="height: 200px; object-fit: cover" alt="..." />
+              </a>
               <div class="card-body">
                 <h5 class="card-title">Software directory</h5>
                 <div class="d-flex flex-wrap gap-2 mt-2 mb-4">
@@ -169,9 +209,11 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
-              <img src="img/bedtimestory_homepage.webp" class="card-img-top img-fluid"
-                style="height: 200px; object-fit: cover" alt="..." />
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
+              <a href="img/full/bedtimestory_1_full.webp" class="glightbox" data-gallery="card2">
+                <img src="img/thumb/bedtimestory_thumb.webp" class="card-img-top img-fluid zoom-hover"
+                  style="height: 200px; object-fit: cover" alt="..." />
+              </a>
               <div class="card-body">
                 <h5 class="card-title">Bedtime Story</h5>
                 <div class="d-flex flex-wrap gap-2 mt-2 mb-4">
@@ -207,9 +249,11 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
-              <img src="img/oralcare_landingpage.webp" class="card-img-top img-fluid"
-                style="height: 200px; object-fit: cover" alt="..." />
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
+              <a href="img/full/oralcare_1_full.webp" class="glightbox" data-gallery="card3">
+                <img src="img/thumb/oralcare_thumb.webp" class="card-img-top img-fluid zoom-hover"
+                  style="height: 200px; object-fit: cover" alt="..." />
+              </a>
               <div class="card-body">
                 <h5 class="card-title">Oral Care</h5>
                 <div class="d-flex flex-wrap gap-2 mt-2 mb-4">
@@ -244,9 +288,11 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
-              <img src="img/chemicalengineering_landingpage.webp" class="card-img-top img-fluid"
-                style="height: 200px; object-fit: cover" alt="..." />
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
+              <a href="img/full/chemicalengineering_1_full.webp" class="glightbox" data-gallery="card4">
+                <img src="img/thumb/chemicalengineering_thumb.webp" class="card-img-top img-fluid zoom-hover"
+                  style="height: 200px; object-fit: cover" alt="..." />
+              </a>
               <div class="card-body">
                 <h5 class="card-title">Chemical Engineering</h5>
                 <div class="d-flex flex-wrap gap-2 mt-2 mb-4">
@@ -282,9 +328,11 @@
 
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
-              <img src="img/photography_landingpage.webp" class="card-img-top img-fluid"
-                style="height: 200px; object-fit: cover" alt="..." />
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
+              <a href="img/full/photography_1_full.webp" class="glightbox" data-gallery="card5">
+                <img src="img/thumb/photography_thumb.webp" class="card-img-top img-fluid zoom-hover"
+                  style="height: 200px; object-fit: cover" alt="..." />
+              </a>
               <div class="card-body">
                 <h5 class="card-title">Photography</h5>
                 <div class="d-flex flex-wrap gap-2 mt-2 mb-4">
@@ -321,9 +369,11 @@
 
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
-              <img src="img/telehealth_landingpage.webp" class="card-img-top img-fluid"
-                style="height: 200px; object-fit: cover" alt="..." />
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
+              <a href="img/full/telehealth_1_full.webp" class="glightbox" data-gallery="card6">
+                <img src="img/thumb/telehealth_thumb.webp" class="card-img-top img-fluid zoom-hover"
+                  style="height: 200px; object-fit: cover" alt="..." />
+              </a>
               <div class="card-body">
                 <h5 class="card-title">Telehealth</h5>
                 <div class="d-flex flex-wrap gap-2 mt-2 mb-4">
@@ -359,9 +409,11 @@
 
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
-              <img src="img/itconsultants_homepage.webp" class="card-img-top img-fluid"
-                style="height: 200px; object-fit: cover" alt="..." />
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
+              <a href="img/full/itconsultant_1_full.webp" class="glightbox" data-gallery="card7">
+                <img src="img/thumb/itconsultant_thumb.webp" class="card-img-top img-fluid zoom-hover"
+                  style="height: 200px; object-fit: cover" alt="..." />
+              </a>
               <div class="card-body">
                 <h5 class="card-title">IT consultants</h5>
                 <div class="d-flex flex-wrap gap-2 mt-2 mb-4">
@@ -399,9 +451,11 @@
 
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
-              <img src="img/mentalhealthinformation_homepage.webp" class="card-img-top img-fluid"
-                style="height: 200px; object-fit: cover" alt="..." />
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
+              <a href="img/full/mentalhealth_1_full.webp" class="glightbox" data-gallery="card8">
+                <img src="img/thumb/mentalhealth_thumb.webp" class="card-img-top img-fluid zoom-hover"
+                  style="height: 200px; object-fit: cover" alt="..." />
+              </a>
               <div class="card-body">
                 <h5 class="card-title">Mental health information</h5>
                 <div class="d-flex flex-wrap gap-2 mt-2 mb-4">
@@ -438,7 +492,7 @@
 
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/sitory_webapp.webp" class="card-img-top img-fluid" style="height: 200px; object-fit: cover"
                 alt="..." />
               <div class="card-body">
@@ -494,7 +548,7 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/jojoinventory_webapp.webp" class="card-img-top img-fluid"
                 style="height: 200px; object-fit: cover" alt="..." />
               <div class="card-body">
@@ -550,9 +604,11 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
-              <img src="img/creativedirector_portfolio.webp" class="card-img-top img-fluid"
-                style="height: 200px; object-fit: cover" alt="..." />
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
+              <a href="img/full/creativedirector_1_full.webp" class="glightbox" data-gallery="card9">
+                <img src="img/thumb/creativedirector_thumb.webp" class="card-img-top img-fluid zoom-hover"
+                  style="height: 200px; object-fit: cover" alt="..." />
+              </a>
               <div class="card-body">
                 <h5 class="card-title">Creative director portfolio</h5>
                 <div class="d-flex flex-wrap gap-2 mt-2 mb-4">
@@ -587,9 +643,11 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
-              <img src="img/musician_landing.webp" class="card-img-top img-fluid"
-                style="height: 200px; object-fit: cover" alt="..." />
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
+              <a href="img/full/musician_1_full.webp" class="glightbox" data-gallery="card10">
+                <img src="img/thumb/musician_thumb.webp" class="card-img-top img-fluid zoom-hover"
+                  style="height: 200px; object-fit: cover" alt="..." />
+              </a>
               <div class="card-body">
                 <h5 class="card-title">R&B Musician</h5>
                 <div class="d-flex flex-wrap gap-2 mt-2 mb-4">
@@ -624,9 +682,11 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
-              <img src="img/RSUMelania_landingpage.webp" class="card-img-top img-fluid"
-                style="height: 200px; object-fit: cover" alt="..." />
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
+              <a href="img/full/hospital_1_full.webp" class="glightbox" data-gallery="card11">
+                <img src="img/thumb/hospital_thumb.webp" class="card-img-top img-fluid zoom-hover"
+                  style="height: 200px; object-fit: cover" alt="..." />
+              </a>
               <div class="card-body">
                 <h5 class="card-title">Redesign RSU Melania</h5>
                 <div class="d-flex flex-wrap gap-2 mt-2 mb-4">
@@ -670,7 +730,7 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/htmlemailsignature.webp" class="card-img-top img-fluid"
                 style="height: 200px; object-fit: cover" alt="..." />
               <div class="card-body">
@@ -708,7 +768,7 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/neoprenerubber_landingpage.webp" class="card-img-top img-fluid"
                 style="height: 200px; object-fit: cover" alt="..." />
               <div class="card-body">
@@ -749,7 +809,7 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/airportparking_landingpage.webp" class="card-img-top img-fluid"
                 style="height: 200px; object-fit: cover" alt="..." />
               <div class="card-body">
@@ -781,7 +841,7 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/fleetmanagement_dashboard.webp" class="card-img-top img-fluid"
                 style="height: 200px; object-fit: cover" alt="..." />
               <div class="card-body">
@@ -813,7 +873,7 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/digitalagency_landing.webp" class="card-img-top img-fluid"
                 style="height: 200px; object-fit: cover" alt="..." />
               <div class="card-body">
@@ -850,7 +910,7 @@
 
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/contactdatamanagement_dashboard.webp" class="card-img-top img-fluid"
                 style="height: 200px; object-fit: cover" alt="..." />
               <div class="card-body">
@@ -884,7 +944,7 @@
 
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/pos_desktop.webp" class="card-img-top img-fluid" style="height: 200px; object-fit: cover"
                 alt="..." />
               <div class="card-body">
@@ -916,7 +976,7 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/restaurant_mobile.webp" class="card-img-top img-fluid"
                 style="height: 200px; object-fit: cover" alt="..." />
               <div class="card-body">
@@ -948,7 +1008,7 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/find_mobile.webp" class="card-img-top img-fluid" style="height: 200px; object-fit: cover"
                 alt="..." />
               <div class="card-body">
@@ -982,7 +1042,7 @@
 
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/digive_landingpage.webp" class="card-img-top img-fluid"
                 style="height: 200px; object-fit: cover" alt="Digive landing page" />
               <div class="card-body">
@@ -1042,7 +1102,7 @@
 
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/NRC_landingpage.webp" class="card-img-top img-fluid"
                 style="height: 200px; object-fit: cover" alt="..." />
               <div class="card-body">
@@ -1082,7 +1142,7 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/paymentoptions_mobile.webp" class="card-img-top img-fluid"
                 style="height: 200px; object-fit: cover" alt="..." />
               <div class="card-body">
@@ -1117,7 +1177,7 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/friedchicken_landingpage.webp" class="card-img-top img-fluid"
                 style="height: 200px; object-fit: cover" alt="..." />
               <div class="card-body">
@@ -1149,7 +1209,7 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/therapist_landingpage.webp" class="card-img-top img-fluid"
                 style="height: 200px; object-fit: cover" alt="..." />
               <div class="card-body">
@@ -1181,7 +1241,7 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/skeetshootingclub_landingpage.webp" class="card-img-top img-fluid"
                 style="height: 200px; object-fit: cover" alt="..." />
               <div class="card-body">
@@ -1214,7 +1274,7 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/africancattlefarm_landingpage.webp" class="card-img-top img-fluid"
                 style="height: 200px; object-fit: cover" alt="..." />
               <div class="card-body">
@@ -1246,7 +1306,7 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/textbookgamedesign_landingpage.webp" class="card-img-top img-fluid"
                 style="height: 200px; object-fit: cover" alt="..." />
               <div class="card-body">
@@ -1278,7 +1338,7 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/spaandsalonbooking_form.webp" class="card-img-top img-fluid"
                 style="height: 200px; object-fit: cover" alt="..." />
               <div class="card-body">
@@ -1310,7 +1370,7 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/tennistrainingcourse_landingpage.webp" class="card-img-top img-fluid"
                 style="height: 200px; object-fit: cover" alt="..." />
               <div class="card-body">
@@ -1342,7 +1402,7 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/digive_comingsoonpage.webp" class="card-img-top img-fluid"
                 style="height: 200px; object-fit: cover" alt="..." />
               <div class="card-body">
@@ -1386,7 +1446,7 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/portfolio_darkmode.webp" class="card-img-top img-fluid"
                 style="height: 200px; object-fit: cover" alt="..." />
               <div class="card-body">
@@ -1422,7 +1482,7 @@
           </div>
 
           <div class="col">
-            <div class="card h-100 custom-bg-dark text-white">
+            <div class="card h-100 custom-bg-dark text-white overflow-hidden">
               <img src="img/diswa_administrator.webp" class="card-img-top img-fluid"
                 style="height: 200px; object-fit: cover" alt="..." />
               <div class="card-body">
@@ -1471,6 +1531,19 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
+  <!-- Glightbox Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+  <script>
+    const lightbox = GLightbox({
+      selector: '.glightbox',
+      loop: true,
+      zoomable: false,
+      draggable: false
+    });
+  </script>
+
 </body>
 
 </html>
