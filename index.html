@@ -46,22 +46,41 @@
     }
 
 
+    /* Default (desktop dan layar besar) */
     .glightbox-container .ginner-container,
     .glightbox-container .gslide {
       display: flex !important;
       align-items: flex-start !important;
+      /* mulai dari atas */
       justify-content: center !important;
       height: 100% !important;
       overflow-y: auto !important;
-
     }
-
 
     .glightbox-container .gslide-image img {
       width: 100% !important;
       height: auto !important;
       max-height: none !important;
       object-fit: contain !important;
+    }
+
+    /* 🔹 Fix khusus untuk mobile (biar bisa scroll bebas) */
+    @media (max-width: 768px) {
+
+      .glightbox-container .ginner-container,
+      .glightbox-container .gslide {
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        /* biar mulai dari pojok atas */
+        height: auto !important;
+        max-height: 100vh !important;
+        overflow-y: scroll !important;
+        /* paksa scroll vertikal */
+      }
+
+      .glightbox-container .gslide-image img {
+        display: block !important;
+      }
     }
   </style>
 </head>
@@ -75,7 +94,7 @@
     <div class="row g-4">
       <div class="col-md-3">
         <div class="card custom-bg-dark py-4">
-          <img src="img/profile2.webp" class="card-img-top rounded-circle img-fluid" style="
+          <img src="img/profile/profile2.webp" class="card-img-top rounded-circle img-fluid" style="
                 width: 200px;
                 height: 200px;
                 object-fit: cover;
